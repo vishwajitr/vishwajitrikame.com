@@ -16,21 +16,25 @@ export default function Home() {
         <div className="container">
           <div className="header-inner">
             <div className="logo">
-              Vishwajit
+              VishwajitRikame
             </div>
             <div className="rightMenu">
               <ul>
-                <li>About</li>
-                <li>Projects</li>
+                {/* <li>About</li> */}
                 <li>
-                  <Link href="../public/Vishwajit%20Rikame_Frontend%20Lead.pdf">
-                    Resume
+                  <Link href="https://ofccode-sportybruh1990.vercel.app/">
+                    <a target="_blank">Projects</a>
+                  </Link>
+                  </li>
+                <li>
+                  <Link href="/Vishwajit%20Rikame_Frontend%20Lead.pdf">
+                    <a target="_blank">Resume</a>
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="connectwithme">
-              <a href="">let's chat</a>
+              <a href="https://api.whatsapp.com/send?phone=9702270708&text=Hi,%20Website%20Query">let's chat</a>
             </div>
           </div>
         </div>
