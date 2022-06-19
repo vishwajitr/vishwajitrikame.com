@@ -88,7 +88,7 @@ export default function Home() {
                 </div>
                 <div className='max-50p'>
                   <p>
-                    Having more than 10 years of Web Developement experience<br />
+                    Having more than 10 years of Web Developement experience.<br />
                     I am experienced in Frontend development, worked on React JS, PHP frameworks, Emailer.
                   </p>
                 </div>
