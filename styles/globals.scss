@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+$color-red: #FF0000;
+$color-green: #00FF00;
+$color-blue: #0000FF;
+
+.header{
+  background-color: #dadada;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@mixin random-color(){
+  color: rgb(random(255), random(255), random(255));
+}
+body{
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+.full-conatiner {
+  padding: 0 2rem;
+}
+
+.container {
+  padding: 0 2rem;
+  max-width: 1140px;
+}
+
+
+.rightMenu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: stretch;
+  li {
+    list-style: none;
+    padding: 0px 7px;
+    font-size: 12px;
+  }
+
+}
+
+section.first-section {
+  background: url('../public/frontend.webp') no-repeat right bottom;
+  background-size: 20%;
+  padding: 50px 50px 50px;
+  text-align: left;
+  h1{
+    margin-bottom: 20px;
+  }
+  h4{
+    text-align: left;
+  }
+  .talks-about{
+    font-size: 12px;
+    color:#757575;
+    span{
+      padding: 0 5px;
+    }
+    span:nth-child(1){
+      color: $color-red;
+    }
+    span:nth-child(2){
+      color: $color-green;
+    }
+    span:nth-child(3){
+      color: $color-blue;
+    }
+    span:nth-child(4){
+      color: $color-red;
+    }
+  }
+  p{
+    margin-top: 10px;
+  }
+}
+.max-50p{
+  max-width: 50%;
+}
