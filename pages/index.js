@@ -20,10 +20,9 @@ export default function Home() {
             </div>
             <div className="rightMenu">
               <ul>
-                {/* <li>About</li> */}
                 <li>
-                  <Link href="https://ofccode-sportybruh1990.vercel.app/">
-                    <a target="_blank">Projects</a>
+                  <Link href="https://vishwajitposts.tumblr.com/">
+                    <a target="_blank">Portfolio</a>
                   </Link>
                   </li>
                 <li>
