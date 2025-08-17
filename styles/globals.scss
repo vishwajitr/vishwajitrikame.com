@@ -717,12 +717,21 @@ img {
           gap: 1rem;
           
           .project-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             color: $color-primary;
             font-weight: 600;
             padding: 0.5rem 1rem;
             border: 1px solid $color-primary;
             border-radius: $border-radius;
             transition: $transition;
+            text-decoration: none;
+            
+            img {
+              width: 16px;
+              height: 16px;
+            }
             
             &:hover {
               background: $color-primary;
@@ -734,8 +743,100 @@ img {
     }
   }
   
+  .freelance-projects {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid $color-border;
+    
+    h3 {
+      font-family: $font-secondary;
+      font-size: 1.8rem;
+      color: $color-text;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .freelance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+      
+      .freelance-item {
+        background: white;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        transition: $transition;
+        overflow: hidden;
+        
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .freelance-image {
+          height: 200px;
+          overflow: hidden;
+          
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: $transition;
+          }
+          
+          &:hover img {
+            transform: scale(1.05);
+          }
+        }
+        
+        .freelance-content {
+          padding: 2rem;
+        }
+        
+        h4 {
+          font-family: $font-secondary;
+          font-size: 1.2rem;
+          color: $color-text;
+          margin-bottom: 1rem;
+        }
+        
+        p {
+          color: $color-text-light;
+          line-height: 1.6;
+          margin-bottom: 1.5rem;
+        }
+        
+        .project-tech {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          
+          span {
+            background: $color-background-light;
+            color: $color-primary;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+        }
+        
+        // For freelance items without images
+        &:not(:has(.freelance-image)) {
+          padding: 2rem;
+          
+          .freelance-content {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  
   .projects-cta {
     text-align: center;
+    margin-top: 3rem;
     
     p {
       font-size: 1.1rem;
@@ -752,8 +853,8 @@ img {
   
   .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    text-align: center;
     
     .contact-info {
       h3 {
@@ -792,6 +893,7 @@ img {
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
+        justify-content: center;
         
         .social-link {
           display: flex;
@@ -1052,6 +1154,7 @@ img {
   .contact-content {
     grid-template-columns: 1fr;
     gap: 3rem;
+    text-align: center;
   }
 }
 

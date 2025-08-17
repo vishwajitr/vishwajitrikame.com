@@ -300,11 +300,11 @@ export default function Home() {
                 <div className="skill-item">
                   <span>Docker & CI/CD</span>
                   <div className="skill-bar"><div className="skill-progress" style={{width: '75%'}}></div></div>
-                </div>
+                  </div>
                 <div className="skill-item">
                   <span>ESLint & Prettier</span>
                   <div className="skill-bar"><div className="skill-progress" style={{width: '90%'}}></div></div>
-                </div>
+                  </div>
                 <div className="skill-item">
                   <span>Performance Optimization</span>
                   <div className="skill-bar"><div className="skill-progress" style={{width: '88%'}}></div></div>
@@ -420,53 +420,111 @@ export default function Home() {
       <section id="projects" className="projects-section">
         <div className="container">
           <div className="section-header">
-            <h2>Featured Projects</h2>
+            <h2>Freelance Projects</h2>
             <p>Some of my recent work and achievements</p>
           </div>
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-image">
-                <img src="/frontend.webp" alt="E-commerce Platform" />
+                <img src="/frontend.webp" alt="Algo Trading Platform" />
               </div>
               <div className="project-content">
-                <h3>E-commerce Platform</h3>
-                <p>A modern e-commerce solution built with React and Node.js, featuring real-time inventory management and seamless payment integration.</p>
+                <h3>Algo Trading Platform</h3>
+                <p>A sophisticated algorithmic trading platform developed using Python and MongoDB, integrated with Angelone Smart API for real-time trading capabilities.</p>
                 <div className="project-tech">
-                  <span>React</span>
-                  <span>Node.js</span>
+                  <span>Python</span>
                   <span>MongoDB</span>
-                  <span>Stripe</span>
+                  <span>Angelone API</span>
+                  <span>Trading Algorithms</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/vishwajitr/aone-app" target="_blank" className="project-link">
+                    <img src="/github-50.svg" alt="GitHub" />
+                    View Code
+                  </a>
                 </div>
               </div>
             </div>
             <div className="project-card">
               <div className="project-image">
-                <img src="/frontend.webp" alt="Dashboard Analytics" />
+                <img src="/frontend.webp" alt="Coupons Website" />
               </div>
               <div className="project-content">
-                <h3>Analytics Dashboard</h3>
-                <p>A comprehensive analytics dashboard for tracking business metrics with interactive charts and real-time data visualization.</p>
-                <div className="project-tech">
-                  <span>React</span>
-                  <span>D3.js</span>
-                  <span>TypeScript</span>
-                  <span>REST API</span>
-                </div>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="project-image">
-                <img src="/frontend.webp" alt="Task Management App" />
-              </div>
-              <div className="project-content">
-                <h3>Task Management App</h3>
-                <p>A collaborative task management application with drag-and-drop functionality, team collaboration, and progress tracking.</p>
+                <h3>Coupons Website</h3>
+                <p>A comprehensive coupons and deals platform built with Next.js and API integration, hosted on Oracle Cloud with data sourced through advanced web scraping techniques.</p>
                 <div className="project-tech">
                   <span>Next.js</span>
-                  <span>React DnD</span>
-                  <span>Prisma</span>
-                  <span>PostgreSQL</span>
+                  <span>API Integration</span>
+                  <span>Oracle Cloud</span>
+                  <span>Web Scraping</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://ofccode-sportybruh1990s-projects.vercel.app/" target="_blank" className="project-link">
+                    <img src="/github-50.svg" alt="Live Demo" />
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="project-card">
+              <div className="project-image">
+                <img src="/frontend.webp" alt="Site Builder Platform" />
+              </div>
+              <div className="project-content">
+                <h3>Custom Site Builder</h3>
+                <p>A config-based website builder platform enabling users to create dynamic websites through configuration. Features include multilingual support and responsive design.</p>
+                <div className="project-tech">
+                  <span>React</span>
+                  <span>Config-based</span>
+                  <span>Responsive</span>
+                  <span>Multilingual</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://www.sommarskulen.no/" target="_blank" className="project-link">
+                    <img src="/github-50.svg" alt="Live Demo" />
+                    Live Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="freelance-projects">
+            <h3>Additional Freelance Projects</h3>
+            <div className="freelance-grid">
+              <div className="freelance-item">
+                <div className="freelance-image">
+                  <img src="/foodtruck-tracking.png" alt="Food Truck Tracking System Interface" />
+                </div>
+                <div className="freelance-content">
+                  <h4>Food Truck Tracking System</h4>
+                  <p>A real-time tracking system using geolocation services and Firebase database for managing food truck locations and customer interactions. Features live map integration, route optimization, and customer notifications.</p>
+                  <div className="project-tech">
+                    <span>Geolocation API</span>
+                    <span>Firebase</span>
+                    <span>Real-time Updates</span>
+                    <span>Maps Integration</span>
                   </div>
+                </div>
+              </div>
+              <div className="freelance-item">
+              <div className="freelance-image">
+                  <img src="/fitistan-app.webp" alt="Fitistan.com Mobile App"  />
+                </div>
+                <div className="freelance-content">
+                  <h4>Fitistan.com Mobile App</h4>
+                  <p>Complete mobile app revamp using React.js with IONIC Framework, providing a seamless fitness and wellness experience.</p>
+                  <div className="project-tech">
+                    <span>React.js</span>
+                    <span>IONIC Framework</span>
+                    <span>Mobile Development</span>
+                  </div>
+                <div className="freelance-links mt-10">
+                  <a href="https://www.fitistan.com/" target="_blank" className="project-link btn-primary">
+                    Live Demo
+                  </a>
+                </div>
+                </div>
               </div>
             </div>
           </div>
@@ -486,6 +544,7 @@ export default function Home() {
             <h2>Let's Work Together</h2>
             <p>Ready to bring your ideas to life? Let's discuss your next project</p>
           </div>
+          <div className="contact-container">
           <div className="contact-content">
             <div className="contact-info">
               <h3>Get In Touch</h3>
@@ -494,7 +553,7 @@ export default function Home() {
               <div className="contact-methods">
                 <div className="contact-method">
                   <strong>Email</strong>
-                  <p>vishwajitrikame@gmail.com</p>
+                  <p>vishwajit.rikame@gmail.com</p>
                 </div>
                 <div className="contact-method">
                   <strong>Location</strong>
@@ -521,6 +580,7 @@ export default function Home() {
               </div>
             </div>
             
+          </div>
           </div>
         </div>
       </section>
