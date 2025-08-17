@@ -605,7 +605,7 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2024 Vishwajit Rikame. All rights reserved.</p>
+            <p>&copy; 2025 Vishwajit Rikame. All rights reserved.</p>
           </div>
         </div>
       </footer>
